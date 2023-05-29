@@ -1,0 +1,104 @@
+body {
+	min-height: 100vh;
+	background-color: rgb(33, 33, 33);
+}
+.App {
+	font-family: Arial, sans-serif;
+	height: 100vh; /* Set height to full viewport height */
+	display: flex;
+	flex-direction: column; /* Make sure the child elements are stacked vertically */
+}
+
+header {
+	background-color: #282c34;
+	color: white;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+h1 {
+	margin: 0;
+}
+
+.feedback-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.feedback-form {
+	background-color: white;
+	padding: 20px;
+	border-radius: 5px;
+	width: 400px;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+	position: relative;
+}
+
+h2 {
+	margin-top: 0;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+input,
+select,
+textarea {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	resize: none;
+}
+
+.error {
+	color: red;
+	font-size: 12px;
+}
+
+button[type='submit'] {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button[type='submit']:hover {
+	background-color: #0069d9;
+}
+
+.close-button {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background-color: transparent;
+	color: #aaa;
+	border: none;
+	font-size: 24px;
+	cursor: pointer;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	width: 40px;
+}
+
+.close-button:hover {
+	color: #555;
+}
